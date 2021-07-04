@@ -3,6 +3,7 @@ import React, {useState, useEffect} from "react"
 import { updateDeck, readDeck } from "../utils/api";
 
 export default function Edit(){
+
     const history = useHistory();
     const {deckId} = useParams();
     
@@ -11,6 +12,7 @@ export default function Edit(){
         description: "",
         id: 0
     }
+
     const [form, setForm] = useState(newForm)
     useEffect(() => {
         async function getDeck(){
@@ -28,7 +30,6 @@ export default function Edit(){
         });
     };
     
-    
     const handleCancel = () => {
         history.push("/")
     }
@@ -39,7 +40,7 @@ export default function Edit(){
         history.push(`/decks/${savedDeck.id}`)
         
     }
-    
+
     return (
         <>
             <nav aria-label="breadcrumb">

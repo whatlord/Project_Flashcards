@@ -18,7 +18,6 @@ export default function Card({card, handleDelete, deck}){
                    <button className="btn btn-danger" onClick={() => handleDelete(card.id)}>Delete</button>
                </div>
            </div>
-         
         </div>
     )
 }

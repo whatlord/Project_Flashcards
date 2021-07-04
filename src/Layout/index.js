@@ -10,6 +10,7 @@ import NewCard from "./NewCard";
 import EditCard from "./EditCard";
 
 function Layout() {
+  
   return (
     <>
       <Header />

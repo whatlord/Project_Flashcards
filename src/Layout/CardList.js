@@ -3,6 +3,7 @@ import { deleteCard, readDeck } from "../utils/api";
 import Card from "./Card";
 
 export default function CardList({deck, setDeck}){
+
     const {cards} = deck;
 
     const handleDelete = async (id) =>{
@@ -12,13 +13,11 @@ export default function CardList({deck, setDeck}){
             const newDeck = await readDeck(deck.id)
             setDeck(newDeck)
         }
-
     }
 
      const listOfCards = cards.map(card => {
          return <Card card={card} key={card.id} deck={deck} handleDelete={handleDelete}/>
      })
-
 
     return (
         <div className="card">

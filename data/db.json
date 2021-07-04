@@ -49,12 +49,6 @@
       "id": 7
     },
     {
-      "front": "testbe edit",
-      "back": "bestte edit",
-      "deckId": 1,
-      "id": 8
-    },
-    {
       "front": "this is the third card",
       "back": "this is the back",
       "deckId": 2,

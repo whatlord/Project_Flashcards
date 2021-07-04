@@ -16,11 +16,9 @@ export default function DeckList(){
             }
             deleteOne();
         }
-
     }
 
     useEffect(() =>{
-
         async function getDecks(){
             const response = await listDecks();
             setDecks(response)

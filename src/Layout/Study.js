@@ -3,6 +3,7 @@ import { useState, useEffect } from "react"
 import React from "react"
 
 export default function Study({deck, cards}){
+    
     const history = useHistory();
     const [index, setIndex] = useState(1);
     const [text, setText] = useState('');

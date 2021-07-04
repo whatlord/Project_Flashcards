@@ -3,8 +3,8 @@ import React from "react"
 import { deleteDeck } from "../utils/api"
 
 export default function Deck({deck, handleDelete}){
+    
     const history = useHistory();
-
 
     const handleSingleDelete = async() => {
         const choice = window.confirm("delete this deck?\n\nYou will not be able to recover it.");

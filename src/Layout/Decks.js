@@ -7,6 +7,7 @@ import CardList from "./CardList";
 import Study from "./Study";
 
 export default function Decks(){
+    
     const [deck,setDeck] = useState({cards:[]})
     const {deckId} = useParams();
     
@@ -19,7 +20,6 @@ export default function Decks(){
     },[deckId])
 
     return (
-        <>
         <Switch>
             <Route path='/decks/:deckId/study'>
                 <Study deck={deck} cards={deck.cards} />
@@ -40,6 +40,5 @@ export default function Decks(){
                 </div>
             </Route>
         </Switch>
-        </>
     )
 }
